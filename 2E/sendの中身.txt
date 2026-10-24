@@ -1,0 +1,42 @@
+◯Player_s.py
+・Player.__init__
+　self.action = [
+		["bet","check","fold"],
+                ["call","raise","fold"],
+                ] 
+　
+
+・game.Start_game()
+　send_list={
+            "action":self.action[action_list][action_num],
+            "bet":10
+	     }
+
+・Animation.drow_card
+　["H", "A"]
+
+・Animation.drow_all_card
+　[    [["H", "A"], ["S", "K"]],  # コミュニティカード
+    [["D", "10"], ["C", "5"]]  # 手札
+　]
+
+・Animation.drow_static_elements
+　[["P1", 123], ["P2", 456], ["P3", 789]]
+
+・Game.Start_game
+　[    [["H", "A"], ["S", "K"]],  # コミュニティカード
+    [["D", "10"], ["C", "5"]]  # 手札
+  ]
+
+・decode_str
+　["card:H-A^D-9", "action:bet", "value:100"]
+
+・card_decode
+　[    [["H", "A"], ["S", "K"]],  # コミュニティカード
+    [["D", "10"], ["C", "5"]]  # 手札
+　]
+
+・receive
+　["card:H-A^D-9", "action:bet", "value:100"]
+
+
